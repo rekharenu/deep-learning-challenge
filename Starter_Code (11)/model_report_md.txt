@@ -1,0 +1,31 @@
+Data preprocessing 
+
+What variable(s) are the target(s) for your model?
+Ans: the target variable is the'IS_SUCCESSFUL'column from application_df
+
+What variable(s) are the features for your model?
+ANS:this was defined to drop the 'IS_SUCCESSFUL'column from original dataframe
+
+What variable(s) should be removed from the input data because they are neither targets nor features?
+Ans: both'EIN' and 'NAME' column were dropped,because they are not targets or features dataset
+
+Compiling, Training, and Evaluating the Model
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+Ans: i used node_1 and node_2 layers as a random guessess from the iterate.
+
+Were you able to achieve the target model performance?
+Ans: i was not able to achive 75% in my model
+
+What steps did you take in your attempts to increase model performance?
+Ans: in addition i added more layers, removed columns, added hidden nodes to get more higher model accuracy.
+
+Summary: 
+
+Summarise the overall results of the deep learning model. Include a recommendation for how a different model could solve 
+this classification problem, and then explain your recommendation.
+
+Ans:In the deep learning model my accurate  is 78% . In  predicting . By using the higher correlation between input and output would get good results.
+
+
+  
