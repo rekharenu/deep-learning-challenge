@@ -100,11 +100,53 @@ Results: Using bulleted lists and images to support your answers, address the fo
 Data Preprocessing
 
 What variable(s) are the target(s) for your model?
+   Targey Variable: The target variable for the model was identified as the column IS_Successful.
+
 What variable(s) are the features for your model?
+    Feature Variable:The following columns were used as features for the model:
+    1 NAME
+    2 APPLICATION_TYPE
+    3 AFFILIATION
+    4 CLASSIFICATION
+    5 USE_CASE
+    6 ORGANIZATION
+    7 STATUS
+    8 INCOME_AMT
+    9 SPECIAL_CONSIDERATIONS
+    10 ASK_AMT
+
+
 What variable(s) should be removed from the input data because they are neither targets nor features?
+     Variable to Remove:The EIN column was removed,as it serves only as an identifier for the application prganization and does not affect the models behaviour
+
+
 Compiling, Training, and Evaluating the Model
 
 How many neurons, layers, and activation functions did you select for your neural network model, and why?
+     Model Architecture:The optimization model used 3 hidden layers with multiple neurons,which increased the accuracy from under 72% to 78%. The initial model has 2 layers,epochs are same ,but when we add the new layers the accuracy will improve.
+     
 Were you able to achieve the target model performance?
+     Target Performance:Yes ,by optimizing the madel the accuracy increases to 78%.
 What steps did you take in your attempts to increase model performance?
-Summary: Summarise the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+    1 Steps to Increae Performance:
+         **Instead of drooping both the EIN and NAME columns,only the EIN colums was dropped . However,only names that appeared more than 5 times were considered.
+         **A third activation layer was added to the model in the following order to boost accuracy to over 72%:
+               1: ReLU layer
+               2: Tanh layer
+               3: Sigmoid layer
+Summary: Summarise the overa
+
+
+     overall results of the deep learning model 77% .This means the test data has improved of time . 
+     The applicant name appears more than 5 times (indicating they have applied
+      more than 5 times).
+     The application type is one of the following: T3, T4, T5, T6, or T19.
+     The application has one of the following classification values:   C1000,       C1200,
+C2000, C2100, or C3000.Include a recommendation for how a different model could solve this classification problem, and then explain your recommendat
+
+Alternative method
+
+We can use the Random Forest also achive accuray close .
+
+
+
